@@ -109,7 +109,7 @@ MONOMER.prototype.user = function() {
 		}
 	} else {
 		this._instance = 'u';
-		return new Error("La fonction .user() n'est pas encore développée.");
+		return new Error("La función .user() aún no está desarrollada.");
 	}
 };
 
@@ -142,7 +142,7 @@ MONOMER.prototype.forum = function() {
   		if (this.is(id, 'id')) {
   			return new FA_FORUM(id, this);
   		}
-		return new Error('Identifiant du forum invalide.')
+		return new Error('ID de foro inválido.')
 	}
 };
 
@@ -372,7 +372,7 @@ FA_OBJECT.prototype.fetcherFeedback = function(res, promise) {
 };
 
 FA_OBJECT.prototype.isUserLoggedIn = function() {
-	if (!this._m.user().logged) return new Error('Action invité impossible');
+	if (!this._m.user().logged) return new Error('La acción para los invitados no está habilitada');
 };
 
 
@@ -444,7 +444,7 @@ function FA_LOGIN() {
 		method: 'POST'
 	}, body).then(r => r.text())
 	.then(function(html) {
-		if(html.indexOf("Vous avez spécifié un nom d'utilisateur incorrect ou inactif ou un mot de passe invalide") >= 0) {
+		if(html.indexOf("Ha especificado un nombre de usuario incorrecto o inactivo o una contraseña no válida") >= 0) {
 			throw new Error('Something went wrong');
 		} else {
 			return {
@@ -609,7 +609,7 @@ function buildOut() {
     }
 
     // If overlay is true, add one
-    if (this.options.overlay === false) {
+    if (this.options.overlay === true) {
       this.overlay = document.createElement("div");
       this.overlay.className = "monomer-overlay " + this.options.className;
       docFrag.appendChild(this.overlay);
