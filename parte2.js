@@ -4,7 +4,7 @@ const DEFAULT_LANG = {
     },
     msg: {
         error: "Se ha producido un error",
-        confirm: "¿Confirma los datos del personaje?"
+        confirm: "¿Confirma el cambio de personaje?"
     },
     modal: {
         password_placeholder: "",
@@ -18,14 +18,14 @@ const DEFAULT_LANG = {
 const DEFAULT_OPT = {
     logo: '',
     enableReorder: true,
-    confirm: true,
+    confirm: false,
     updateAvatar: true,
     customButtons: [],
     blockClass: 'switcheroo',
     deleteIcon: `×`,
     addIcon: `+`,
     errorMsg: 'Se ha producido un error',
-    confirmMsg: '¿Confirma los datos del personaje?',
+    confirmMsg: '¿Confirma el cambio de personaje?',
     modal: {}
 };
 
