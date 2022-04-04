@@ -18,7 +18,7 @@ const DEFAULT_LANG = {
 const DEFAULT_OPT = {
     logo: '',
     enableReorder: true,
-    confirm: true,
+    confirm: false,
     updateAvatar: true,
     customButtons: [],
     blockClass: 'switcheroo',
