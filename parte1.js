@@ -609,7 +609,7 @@ function buildOut() {
     }
 
     // If overlay is true, add one
-    if (this.options.overlay === true) {
+    if (this.options.overlay === false) {
       this.overlay = document.createElement("div");
       this.overlay.className = "monomer-overlay " + this.options.className;
       docFrag.appendChild(this.overlay);
