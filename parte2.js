@@ -24,7 +24,7 @@ const DEFAULT_OPT = {
     blockClass: 'switcheroo',
     deleteIcon: `×`,
     addIcon: `+`,
-    errorMsg: 'Se ha producido un error',
+    errorMsg: 'Se ha producido un error.',
     confirmMsg: '¿Confirma el cambio de personaje?',
     modal: {}
 };
